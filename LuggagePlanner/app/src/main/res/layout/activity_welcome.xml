@@ -52,6 +52,7 @@
            android:layout_height="wrap_content"
            android:orientation="vertical">
            <EditText
+               android:id="@+id/searchWidget"
                android:layout_width="match_parent"
                android:layout_height="60dp"
                android:layout_marginLeft="10dp"
@@ -60,11 +61,20 @@
                android:paddingLeft="10dp"
                android:paddingRight="10dp"
                android:background="@drawable/myshape"
+               android:drawableLeft="@mipmap/search"
                android:drawablePadding="10dp"
                android:hint="Enter you destination"
                android:singleLine="true"
 
               />
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/myRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="10dp"
+               android:scrollbars="vertical">
+
+           </android.support.v7.widget.RecyclerView>
        </LinearLayout>
 
 
